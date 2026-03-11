@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piattaforme | Gaspianista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,1,400;6..96,1,500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="topbar">
+          <div class="nav-links nav-links-left">
+            <a href="./progetto.html">Progetto</a>
+            <a href="./spartiti.html">Spartiti</a>
+            <a href="./piattaforme.html">Piattaforme</a>
+          </div>
+          <a class="brand-lockup" href="./index.html" aria-label="Torna alla home">
+            <img class="piano-mark" src="../grand-piano.png" alt="" />
+            <span class="brand-name">Gaspianista</span>
+          </a>
+          <div class="nav-actions">
+            <a class="button button-primary" href="mailto:mulegaspar@gmail.com">Contatto</a>
+            <details class="language-menu">
+              <summary class="language-trigger" aria-label="Cambia lingua">
+                <img class="language-flag-image" src="../assets/flags/it.png" alt="" />
+                <span class="language-code">IT</span>
+              </summary>
+              <div class="language-dropdown">
+                <a href="../plataformas.html"><img class="language-flag-image" src="../assets/flags/es.png" alt="" /> ES</a>
+                <a href="../en/platforms.html"><img class="language-flag-image" src="../assets/flags/us.png" alt="" /> US</a>
+                <a href="../pt/plataformas.html"><img class="language-flag-image" src="../assets/flags/br.png" alt="" /> PT</a>
+                <a href="./piattaforme.html"><img class="language-flag-image" src="../assets/flags/it.png" alt="" /> IT</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Piattaforme</p>
+            <h2>Un hub semplice per collegare riproduzioni, social, download e futuri canali di pubblicazione.</h2>
+          </div>
+          <div class="editorial-list reveal">
+            <article class="editorial-row">
+              <span class="feature-number">YT</span>
+              <div>
+                <h3>YouTube</h3>
+                <p>Preview, tutorial o esecuzioni complete per portare traffico verso le tue pagine di spartiti.</p>
+                <a href="https://www.youtube.com/channel/UCiMcAbLQCTLKxLRVu9e8adw" target="_blank" rel="noreferrer">Canale Gaspianista</a>
+              </div>
+            </article>
+            <article class="editorial-row">
+              <span class="feature-number">IG</span>
+              <div>
+                <h3>Instagram</h3>
+                <p>Reel con frammenti di arrangiamenti, snippet visivi e uscite in evidenza.</p>
+                <a href="#">@gaspianista</a>
+              </div>
+            </article>
+            <article class="editorial-row">
+              <span class="feature-number">PDF</span>
+              <div>
+                <h3>Download</h3>
+                <p>Una sezione pronta per collegare PDF, pacchetti di accordi o future piattaforme di vendita.</p>
+                <a href="#">Libreria digitale</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("is-visible");
+        });
+      }, { threshold: 0.16 });
+      document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+    </script>
+  </body>
+</html>

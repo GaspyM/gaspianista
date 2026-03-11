@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto | Gaspianista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,1,400;6..96,1,500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="topbar">
+          <div class="nav-links nav-links-left">
+            <a href="./projeto.html">Projeto</a>
+            <a href="./partituras.html">Partituras</a>
+            <a href="./plataformas.html">Plataformas</a>
+          </div>
+          <a class="brand-lockup" href="./index.html" aria-label="Voltar ao início">
+            <img class="piano-mark" src="../grand-piano.png" alt="" />
+            <span class="brand-name">Gaspianista</span>
+          </a>
+          <div class="nav-actions">
+            <a class="button button-primary" href="mailto:mulegaspar@gmail.com">Contato</a>
+            <details class="language-menu">
+              <summary class="language-trigger" aria-label="Mudar idioma">
+                <img class="language-flag-image" src="../assets/flags/br.png" alt="" />
+                <span class="language-code">PT</span>
+              </summary>
+              <div class="language-dropdown">
+                <a href="../proyecto.html"><img class="language-flag-image" src="../assets/flags/es.png" alt="" /> ES</a>
+                <a href="../en/project.html"><img class="language-flag-image" src="../assets/flags/us.png" alt="" /> US</a>
+                <a href="./projeto.html"><img class="language-flag-image" src="../assets/flags/br.png" alt="" /> PT</a>
+                <a href="../it/progetto.html"><img class="language-flag-image" src="../assets/flags/it.png" alt="" /> IT</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Projeto</p>
+            <h2>Uma identidade pensada para apresentar música de piano com respiro, hierarquia e um tom mais autoral.</h2>
+          </div>
+          <div class="editorial-list reveal">
+            <article class="editorial-row">
+              <span class="feature-number">01</span>
+              <div>
+                <h3>Direção visual</h3>
+                <p>Base clara, linhas finas, composição editorial e tipografia elegante para sustentar uma marca pessoal.</p>
+              </div>
+            </article>
+            <article class="editorial-row">
+              <span class="feature-number">02</span>
+              <div>
+                <h3>Repertório</h3>
+                <p>Músicas, filmes e videogames convivem sem precisar estar todos na mesma tela infinita.</p>
+              </div>
+            </article>
+            <article class="editorial-row">
+              <span class="feature-number">03</span>
+              <div>
+                <h3>Escalabilidade</h3>
+                <p>A estrutura já comporta futuros lançamentos, downloads, loja, newsletter ou links sociais sem perder clareza.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("is-visible");
+        });
+      }, { threshold: 0.16 });
+      document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+    </script>
+  </body>
+</html>

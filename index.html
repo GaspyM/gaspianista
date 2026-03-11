@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaspianista | Partituras, acordes y soundtracks</title>
+    <meta
+      name="description"
+      content="Gaspianista: partituras, acordes y arreglos de canciones, películas y videojuegos con un enfoque elegante y contemporáneo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,1,400;6..96,1,500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="topbar">
+          <div class="nav-links nav-links-left">
+            <a href="./proyecto.html">Proyecto</a>
+            <a href="./catalogo.html">Partituras</a>
+            <a href="./plataformas.html">Plataformas</a>
+          </div>
+
+          <div class="brand-lockup" aria-label="Marca Gaspianista">
+            <img class="piano-mark" src="./grand-piano.png" alt="" />
+            <span class="brand-name">Gaspianista</span>
+          </div>
+
+          <div class="nav-actions">
+            <a class="button button-primary" href="mailto:mulegaspar@gmail.com">Contacto</a>
+            <details class="language-menu">
+              <summary class="language-trigger" aria-label="Cambio de idioma">
+                <img class="language-flag-image" src="./assets/flags/es.png" alt="" />
+                <span class="language-code">ES</span>
+              </summary>
+              <div class="language-dropdown">
+                <a href="./index.html"><img class="language-flag-image" src="./assets/flags/es.png" alt="" /> ES</a>
+                <a href="./en/index.html"><img class="language-flag-image" src="./assets/flags/us.png" alt="" /> US</a>
+                <a href="./pt/index.html"><img class="language-flag-image" src="./assets/flags/br.png" alt="" /> PT</a>
+                <a href="./it/index.html"><img class="language-flag-image" src="./assets/flags/it.png" alt="" /> IT</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </header>
+
+      <header class="hero">
+        <div class="hero-grid reveal">
+          <section class="hero-copy">
+            <p class="eyebrow">Partituras, acordes y soundtracks para piano</p>
+            <h1>Una vitrina limpia y elegante para tu universo musical.</h1>
+            <p class="hero-text">
+              Gaspianista presenta partituras y acordes de canciones,
+              películas y videojuegos con una estética editorial clara,
+              moderna y pensada para destacar tu identidad.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="./catalogo.html">Explorar partituras</a>
+              <a class="button button-secondary" href="./proyecto.html">Conocer el proyecto</a>
+            </div>
+
+            <ul class="hero-highlights" aria-label="Aspectos destacados">
+              <li>Arreglos claros y expresivos</li>
+              <li>Selección de soundtracks icónicos</li>
+              <li>Diseño pensado para crecer como marca</li>
+            </ul>
+          </section>
+
+          <aside class="hero-visual" aria-label="Presentación visual">
+            <div class="visual-panel visual-piano"></div>
+            <div class="visual-caption">
+              <span class="mini-tag">Marca</span>
+              <p>Minimalismo editorial, líneas limpias y foco en repertorio visualmente curado.</p>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section editorial-section reveal">
+          <div class="section-heading">
+            <p class="section-kicker">Inicio</p>
+            <h2>La página principal queda corta, clara y orientada a llevar a cada universo por separado.</h2>
+          </div>
+
+          <div class="editorial-list">
+            <article class="editorial-row">
+              <span class="feature-number">PR</span>
+              <div>
+                <h3><a href="./proyecto.html">Proyecto</a></h3>
+                <p>La identidad, la propuesta y el tono de Gaspianista viven en una página dedicada.</p>
+              </div>
+            </article>
+            <article class="editorial-row">
+              <span class="feature-number">CA</span>
+              <div>
+                <h3><a href="./catalogo.html">Partituras</a></h3>
+                <p>Las partituras, colecciones y piezas destacadas pasan a una página propia más cómoda de explorar.</p>
+              </div>
+            </article>
+            <article class="editorial-row">
+              <span class="feature-number">PL</span>
+              <div>
+                <h3><a href="./plataformas.html">Plataformas</a></h3>
+                <p>YouTube, Instagram, descargas y links externos quedan agrupados en otro espacio más directo.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section cta-section">
+          <div class="cta-box">
+            <p class="section-kicker">Navegación principal</p>
+            <h2>Entrá a cada sección desde su propia página para que la home respire mejor.</h2>
+            <p>
+              La estructura ya está lista para seguir creciendo sin que la portada
+              se vuelva larga ni pesada.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:mulegaspar@gmail.com">Contactar marca</a>
+              <a class="button button-secondary" href="./plataformas.html">Ver plataformas</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Gaspianista</p>
+        <p>Partituras, acordes y soundtracks para una audiencia que escucha con los ojos y toca con intención.</p>
+      </footer>
+    </div>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            }
+          });
+        },
+        { threshold: 0.16 }
+      );
+
+      document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+    </script>
+  </body>
+</html>

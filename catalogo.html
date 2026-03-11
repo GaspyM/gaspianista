@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partituras | Gaspianista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,1,400;6..96,1,500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="topbar">
+          <div class="nav-links nav-links-left">
+            <a href="./proyecto.html">Proyecto</a>
+            <a href="./catalogo.html">Partituras</a>
+            <a href="./plataformas.html">Plataformas</a>
+          </div>
+          <a class="brand-lockup" href="./index.html" aria-label="Volver al inicio">
+            <img class="piano-mark" src="./grand-piano.png" alt="" />
+            <span class="brand-name">Gaspianista</span>
+          </a>
+          <div class="nav-actions">
+            <a class="button button-primary" href="mailto:mulegaspar@gmail.com">Contacto</a>
+            <details class="language-menu">
+              <summary class="language-trigger" aria-label="Cambio de idioma">
+                <img class="language-flag-image" src="./assets/flags/es.png" alt="" />
+                <span class="language-code">ES</span>
+              </summary>
+              <div class="language-dropdown">
+                <a href="./catalogo.html"><img class="language-flag-image" src="./assets/flags/es.png" alt="" /> ES</a>
+                <a href="./en/sheet-music.html"><img class="language-flag-image" src="./assets/flags/us.png" alt="" /> US</a>
+                <a href="./pt/partituras.html"><img class="language-flag-image" src="./assets/flags/br.png" alt="" /> PT</a>
+                <a href="./it/spartiti.html"><img class="language-flag-image" src="./assets/flags/it.png" alt="" /> IT</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Partituras</p>
+            <h2>Lanzamientos y repertorio distribuidos en una página dedicada, más cómoda para explorar.</h2>
+          </div>
+          <div class="release-list reveal">
+            <article class="release-row">
+              <p class="collection-type">Featured Release</p>
+              <h3>Interstellar Main Theme</h3>
+              <p>Sheet + chords con una presentación limpia y protagonista.</p>
+            </article>
+            <article class="release-row">
+              <p class="collection-type">Movie Score</p>
+              <h3>La La Land Medley</h3>
+              <p>Un lanzamiento editorial para búsquedas de soundtrack y piano solo.</p>
+            </article>
+            <article class="release-row">
+              <p class="collection-type">Video Game</p>
+              <h3>Zelda Piano Theme</h3>
+              <p>Una pieza fuerte para comunidad gamer y repertorio nostálgico.</p>
+            </article>
+            <article class="release-row">
+              <p class="collection-type">Pop Song</p>
+              <h3>Ballad Sessions</h3>
+              <p>Versiones listas para covers, estudio y contenido corto en redes.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("is-visible");
+        });
+      }, { threshold: 0.16 });
+      document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+    </script>
+  </body>
+</html>
