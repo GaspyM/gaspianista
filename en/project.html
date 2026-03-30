@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project | Gaspianista</title>
+    <title>gaspianista | Covers by Gaspar Mulé</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +17,13 @@
       <header class="site-header">
         <nav class="topbar">
           <div class="nav-links nav-links-left">
-            <a href="./project.html">Project</a>
+            <a href="./project.html" aria-current="page">Project</a>
             <a href="./sheet-music.html">Sheet Music</a>
             <a href="./platforms.html">Platforms</a>
           </div>
           <a class="brand-lockup" href="./index.html" aria-label="Back to home">
             <img class="piano-mark" src="../grand-piano.png" alt="" />
-            <span class="brand-name">Gaspianista</span>
+            <span class="brand-name">gaspianista</span>
           </a>
           <div class="nav-actions">
             <a class="button button-primary" href="mailto:mulegaspar@gmail.com">Contact</a>
@@ -42,37 +42,56 @@
           </div>
         </nav>
       </header>
+
       <main>
         <section class="hero">
           <div class="section-heading reveal">
             <p class="section-kicker">Project</p>
-            <h2>An identity designed to present piano music with air, hierarchy and a more authored tone.</h2>
+            <h2>Welcome to gaspianista!</h2>
+            <p class="project-subtitle">Gospel · Cinema · Video Games</p>
           </div>
           <div class="editorial-list reveal">
-            <article class="editorial-row">
+            <article class="editorial-row editorial-row-feature">
               <span class="feature-number">01</span>
-              <div>
-                <h3>Visual direction</h3>
-                <p>A bright base, fine lines, editorial composition and elegant type to support a personal brand.</p>
+              <div class="project-feature-grid">
+                <div>
+                  <h3>About me</h3>
+                  <p>
+                    Hi! I'm Gaspi, I've been playing piano since I was 5 and this
+                    is my space to share arrangements, downloadable content and
+                    audiovisual material. I hope you enjoy it!
+                  </p>
+                </div>
+                <div class="project-photo-frame">
+                  <img class="project-photo" src="../assets/gaspar-piano.jpeg" alt="Gaspar playing piano" />
+                </div>
               </div>
             </article>
             <article class="editorial-row">
               <span class="feature-number">02</span>
               <div>
                 <h3>Repertoire</h3>
-                <p>Songs, films and video games can coexist without forcing everything onto one endless screen.</p>
+                <p>
+                  My repertoire includes gospel songs, film soundtracks and video
+                  game music that truly represent me.
+                </p>
               </div>
             </article>
             <article class="editorial-row">
               <span class="feature-number">03</span>
               <div>
-                <h3>Scalability</h3>
-                <p>The structure is ready for future releases, downloads, a store, a newsletter or social links without losing clarity.</p>
+                <h3>What you'll find</h3>
+                <p>
+                  Sheet music, chords and my platforms where I share content.
+                </p>
               </div>
             </article>
           </div>
         </section>
       </main>
+      <footer class="project-footer">
+        <p>&copy; 2026 | gaspianista by Gaspar Mulé</p>
+      </footer>
     </div>
     <script>
       const observer = new IntersectionObserver((entries) => {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spartiti | Gaspianista</title>
+    <title>gaspianista | Covers by Gaspar Mulé</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,12 +18,12 @@
         <nav class="topbar">
           <div class="nav-links nav-links-left">
             <a href="./progetto.html">Progetto</a>
-            <a href="./spartiti.html">Spartiti</a>
+            <a href="./spartiti.html" aria-current="page">Spartiti</a>
             <a href="./piattaforme.html">Piattaforme</a>
           </div>
           <a class="brand-lockup" href="./index.html" aria-label="Torna alla home">
             <img class="piano-mark" src="../grand-piano.png" alt="" />
-            <span class="brand-name">Gaspianista</span>
+            <span class="brand-name">gaspianista</span>
           </a>
           <div class="nav-actions">
             <a class="button button-primary" href="mailto:mulegaspar@gmail.com">Contatto</a>
@@ -46,32 +46,44 @@
         <section class="hero">
           <div class="section-heading reveal">
             <p class="section-kicker">Spartiti</p>
-            <h2>Uscite e repertorio vivono in una pagina dedicata, più naturale da esplorare.</h2>
+            <h2>Qui potrai trovare gli spartiti e i fogli di accordi delle mie interpretazioni da scaricare.</h2>
           </div>
           <div class="release-list reveal">
             <article class="release-row">
-              <p class="collection-type">Uscita in evidenza</p>
-              <h3>Interstellar Main Theme</h3>
-              <p>Spartito + accordi con una presentazione pulita e centrale.</p>
-            </article>
-            <article class="release-row">
-              <p class="collection-type">Colonna sonora</p>
-              <h3>La La Land Medley</h3>
-              <p>Un'uscita editoriale pensata per la scoperta tramite soundtrack e piano solo.</p>
-            </article>
-            <article class="release-row">
-              <p class="collection-type">Videogioco</p>
-              <h3>Zelda Piano Theme</h3>
-              <p>Un brano forte per pubblico gaming e repertorio nostalgico.</p>
-            </article>
-            <article class="release-row">
-              <p class="collection-type">Brano pop</p>
-              <h3>Ballad Sessions</h3>
-              <p>Versioni pronte per cover, studio e contenuti brevi sui social.</p>
+              <p class="collection-type">Brano in evidenza</p>
+              <h3>Nadie Como Tú - Marcos Vidal</h3>
+              <p class="download-label">SCARICA:</p>
+              <div class="inline-actions inline-actions-compact">
+                <a class="mini-download-button" href="../nadie-como-tu-marcos-vidal.pdf" data-download-link title="Scarica spartito" download>
+                  <span class="icon-sheet" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                      <path d="M7 3.5h7l3 3V20a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-15.5Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M14 3.5V7h3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M9 10.5h6M9 13.5h6M9 16.5h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mini-download-button" href="../nadie-como-tu-marcos-vidal-acordes.pdf" data-download-link title="Scarica foglio di accordi" download>
+                  <span class="icon-chords" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                      <circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="12" cy="5.8" r="1.2" fill="currentColor"/>
+                      <circle cx="17.2" cy="8.6" r="1.2" fill="currentColor"/>
+                      <circle cx="17.1" cy="15.4" r="1.2" fill="currentColor"/>
+                      <circle cx="12" cy="18.2" r="1.2" fill="currentColor"/>
+                      <circle cx="6.9" cy="15.4" r="1.2" fill="currentColor"/>
+                      <circle cx="6.8" cy="8.6" r="1.2" fill="currentColor"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
             </article>
           </div>
         </section>
       </main>
+      <footer class="project-footer">
+        <p>&copy; 2026 | gaspianista by Gaspar Mulé</p>
+      </footer>
     </div>
     <script>
       const observer = new IntersectionObserver((entries) => {
@@ -80,6 +92,21 @@
         });
       }, { threshold: 0.16 });
       document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+
+      document.querySelectorAll("[data-download-link]").forEach((downloadButton) => {
+        downloadButton.addEventListener("click", (event) => {
+          event.preventDefault();
+          const wantsCoffee = window.confirm(
+            "Se vuoi, puoi lasciare un cafecito prima di scaricare. Se scegli Annulla, il file verrà comunque scaricato."
+          );
+
+          if (wantsCoffee) {
+            window.open("https://cafecito.app/gaspianista", "_blank", "noopener,noreferrer");
+          }
+
+          window.location.href = downloadButton.href;
+        });
+      });
     </script>
   </body>
 </html>
