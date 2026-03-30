@@ -5,6 +5,7 @@
   from = "/"
   to = "/proyecto"
   status = 301
+  force = true
 
 [[headers]]
   for = "/*"
